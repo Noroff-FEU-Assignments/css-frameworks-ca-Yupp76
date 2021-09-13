@@ -1,0 +1,60 @@
+.navbar {
+  &__wrapper {
+    padding: 1rem 0;
+    background-color: $shades-2;
+  }
+  &__logo {
+    font-family: $primary-font;
+    font-size: rem(24);
+    color: $primary-color;
+    font-style: italic;
+    font-weight: 700;
+  }
+  &__logo span {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+  }
+  &__item {
+    border-radius: rem(4);
+    height: fit-content;
+    color: $shades-5 !important;
+    padding: 0.25rem 1rem !important;
+  }
+  &__item:hover {
+    background-color: $shades-1;
+  }
+  &__form {
+    margin-left: auto;
+  }
+  &__form input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+  }
+  &__form button {
+    background-color: $primary-color;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid $primary-color-muted;
+  }
+  &__form button:hover,
+  &__form button:focus {
+    background-color: $primary-color-muted;
+    border: 1px solid $primary-color-muted;
+  }
+  &__menu {
+    margin: 0 1rem;
+  }
+}
+
+footer .container-h,
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $shades-4;
+}
+
+footer ul li {
+  margin-right: 1.5rem;
+}

@@ -1,0 +1,49 @@
+.carousel-indicators {
+  margin-bottom: 2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  opacity: 1;
+  width: rem(30);
+  height: rem(30);
+  border-radius: rem(4);
+  background-color: $shades-1;
+  margin-right: rem(15);
+  margin-left: rem(15);
+  box-shadow: 0px 4px 10px #000000b4;
+  border-top: initial;
+  border-bottom: initial;
+}
+
+.carousel-indicators .active {
+  background-color: $primary-color;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.tab-content {
+  padding: 2rem;
+  background: $shades-1;
+  border-color: white #dee2e6 #dee2e6;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 0;
+  border-bottom-left-radius: rem(13);
+  border-bottom-right-radius: rem(13);
+}
+
+.nav-tabs .nav-link {
+  padding: 0.5rem 2.25rem;
+  font-size: rem(18);
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.nav-tabs .nav-link.active {
+  border-top-left-radius: rem(13);
+  border-top-right-radius: rem(13);
+  color: $shades-4;
+}

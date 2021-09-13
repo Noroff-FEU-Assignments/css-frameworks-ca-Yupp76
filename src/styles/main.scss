@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./variables";
+@import "./helpers";
+@import "./layout";
+@import "./home";
+@import "./bootsrap-overrides";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: $secondary-font;
+}
+
+.container-h {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 0.5rem;
+}
+
+.container-v {
+  min-height: 100vh;
+  background-image: $background-grads;
+  background-color: $shades-2;
+  background-position: center;
+  background-size: cover;
+}
+
+.paragraph {
+  font-size: rem(16);
+  line-height: 1.7;
+  color: $shades-4;
+}
+
+.heading {
+  font-family: $primary-font;
+  color: $primary-color;
+  &--xxl {
+    font-size: rem(36);
+    margin-bottom: 1.5rem;
+  }
+  &--xl {
+    font-size: rem(32);
+    margin-bottom: 1.5rem;
+  }
+  &--lg {
+    font-size: rem(28);
+    margin-bottom: 1.5rem;
+  }
+  &--md {
+    font-size: rem(24);
+    margin-bottom: 1.25rem;
+  }
+  &--sm {
+    font-size: rem(21);
+    margin-bottom: 1.25rem;
+  }
+  &--wsm {
+    font-size: rem(18);
+    margin-bottom: 1.25rem;
+  }
+}
