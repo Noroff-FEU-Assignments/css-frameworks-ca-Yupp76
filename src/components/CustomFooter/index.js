@@ -12,8 +12,10 @@ const CustomFooter = () => {
             <FontAwesomeIcon icon={["fab", "youtube"]} size="3x" />
           </li>
         </ul>
-        <p className="paragraph">hello@yay.com</p>
-        <p className="paragraph">Copyright 2020</p>
+        <ul className="d-flex justify-content-between">
+          <li className="paragraph">hello@yay.com</li>
+          <li className="paragraph">Copyright 2020</li>
+        </ul>
       </div>
     </footer>
   );

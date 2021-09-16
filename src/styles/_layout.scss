@@ -55,3 +55,10 @@ footer ul {
 footer ul li {
   margin-right: 1.5rem;
 }
+
+footer ul:nth-child(2) {
+  width: 60%;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
+}

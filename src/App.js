@@ -2,6 +2,7 @@ import Layout from "containers/common/Layout";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "pages/home";
+import News from "pages/news";
 
 const App = () => {
   return (
@@ -11,9 +12,10 @@ const App = () => {
           <Route path="/">
             <Home />
           </Route>
-          {/* <Route path="/news">
+          <Route path="/news">
             <News />
           </Route>
+          {/* 
           <Route path="/contact">
             <Contact />
           </Route> */}
