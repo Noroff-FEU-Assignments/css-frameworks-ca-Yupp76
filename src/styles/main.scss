@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 @import "~bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
 
 @import "./variables";
 @import "./helpers";
 @import "./layout";
 @import "./home";
+@import "./news";
+@import "./contact";
 @import "./bootsrap-overrides";
 
 * {
@@ -51,7 +54,6 @@ body {
 
 .heading {
   font-family: $primary-font;
-  color: $primary-color;
   &--xxl {
     font-size: rem(36);
     margin-bottom: 1.5rem;
@@ -72,8 +74,17 @@ body {
     font-size: rem(21);
     margin-bottom: 1.25rem;
   }
-  &--wsm {
+  &--xsm {
     font-size: rem(18);
     margin-bottom: 1.25rem;
+  }
+  &--pink {
+    color: $primary-color;
+  }
+  &--black {
+    color: $shades-5;
+  }
+  &--sec {
+    font-family: $secondary-font;
   }
 }

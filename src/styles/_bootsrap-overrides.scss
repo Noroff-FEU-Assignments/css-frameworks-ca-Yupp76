@@ -33,6 +33,7 @@
   margin-top: 0;
   border-bottom-left-radius: rem(13);
   border-bottom-right-radius: rem(13);
+  border-top-right-radius: rem(13);
 }
 
 .nav-tabs .nav-link {
@@ -46,4 +47,32 @@
   border-top-left-radius: rem(13);
   border-top-right-radius: rem(13);
   color: $shades-4;
+}
+
+.pagination .page-item.active .page-link,
+.pagination .page-item.active .page-link:hover,
+.btn.btn-primary {
+  color: #fff;
+  background-color: $primary-color;
+  border-color: $primary-color-muted;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  background-color: $primary-color-muted;
+  border-color: $primary-color-muted;
+}
+
+.pagination .page-item .page-link {
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid $primary-color-muted;
+  color: $primary-color;
+}
+
+.pagination .page-item .page-link:hover {
+  color: $primary-color-muted;
+  background-color: #f8dce6;
+  border-color: $primary-color-muted;
 }

@@ -1,11 +1,5 @@
-import Hero from "containers/home/hero";
+import MainSection from "containers/news/mainSection";
 
-const Home = () => {
-  return (
-    <>
-      <Hero />
-    </>
-  );
-};
+const News = () => <MainSection />;
 
-export default Home;
+export default News;

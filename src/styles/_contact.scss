@@ -1,0 +1,52 @@
+.contact {
+  .form {
+    &__wrapper {
+      background-color: $shades-2;
+      padding: 1.25rem 2rem;
+      box-shadow: 0px 4px 11px #00000024;
+      border-radius: rem(8);
+    }
+    &__wrapper .btn {
+      width: 100%;
+      background-color: $shades-4 !important;
+      border: 1px solid $shades-4 !important;
+    }
+    &__wrapper .btn:hover {
+      background-color: shade-color($shades-4, 30) !important;
+      border: 1px solid shade-color($shades-4, 30) !important;
+    }
+    &__wrapper .form-label {
+      @extend .heading;
+      @extend .heading--xsm;
+      @extend .heading--sec;
+      color: $shades-4;
+      margin-bottom: 0.25rem !important;
+    }
+    &__wrapper .form-control {
+      padding: 0.75rem;
+    }
+    &__wrapper .form-check-input:checked {
+      background-color: $primary-color;
+      border-color: $primary-color-muted;
+    }
+  }
+  ul {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+      margin-left: 0;
+      padding: 0;
+    }
+  }
+  ul li {
+    color: $shades-4;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin: 0 0 2rem;
+  }
+  ul li span {
+    width: 120px;
+  }
+}
